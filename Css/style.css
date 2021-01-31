@@ -1,0 +1,1087 @@
+body{
+	
+	overflow-x: hidden;
+	width: 100%
+	
+}
+
+*{
+	font-size: 18px;
+	font-family: Rubik;
+	font-weight:  500 , 400;
+	box-sizing: border-box;
+	/*user-select: none;*/
+
+}
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color:hsl(229, 31%, 21%)
+	
+	
+}
+h3{
+	font-weight: bold;
+	color:hsl(229, 31%, 21%);
+}
+h4{
+	color:hsl(229, 8%, 60%);
+	line-height: 30px
+}
+h5{
+	color:hsl(229, 8%, 60%);
+	line-height: 30px
+}
+
+ li a:hover{
+	color:hsl(0, 94%, 66%);
+	text-decoration: none;
+}
+
+/* the first */
+
+/* first lign */
+/* lg and md for desktop */
+
+header{
+	width: 95%;
+	margin-top: 50px;
+	margin-left: 10%;
+	display: inline-block
+}
+header nav{
+	float: right;
+	margin-right: 15%;
+	text-transform: uppercase;
+	
+}
+header nav li{
+	display: inline-block;
+	list-style-type: none;
+}
+header nav li a{
+	text-decoration: none;
+	color:hsl(229, 8%, 60%);
+	margin-left: 30px;
+	transition: all 0.3s ease-in-out
+}
+
+header nav li a button{
+	
+	text-align: center;
+	text-transform: uppercase;
+	
+	color:white;
+	width: 110px;
+	height: 40px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: hsl(0, 94%, 66%);
+	transition: all 0.5s ease-in-out
+}
+
+header nav li a button:hover{
+	color: hsl(0, 94%, 66%);
+	background-color: white;
+	border:0.5px solid hsl(0, 94%, 66%);
+}
+
+/* sm and xs for mobile */
+
+.header-sm-xs img:first-of-type{
+	
+	margin-left: -30px;
+}
+.header-sm-xs img:nth-of-type(2){
+	
+	float: right;
+	margin-right: 10%;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.header-sm-xs .nav-show{
+display: none;
+	z-index: 1000000;
+	position: absolute;
+	top:0;
+	left:0;
+	text-transform: uppercase;
+	background-color: #4545e2;
+	width: 100%;
+	height: 650px;
+	padding-top: 50px;
+	
+	
+	animation: show-burger 0.3s ease-in-out 0s 1 normal forwards ;
+}
+.nav-close{
+	display: none;
+	z-index: 1000000;
+	position: absolute;
+	top:0;
+	left:0;
+	text-transform: uppercase;
+	background-color: #4545e2;
+	width: 100%;
+	height: 650px;
+	padding-top: 50px;
+	
+	
+	animation: close-burger 0.3s ease-in-out 0s 1 normal forwards  ;
+}
+
+/* when i open the nav */
+
+@keyframes show-burger{
+	
+	from{
+		margin-left: 100%;
+	}
+	to{
+		margin-left:0%;
+	}
+}
+/* when i close the nav */
+
+@keyframes close-burger{
+	
+	from{
+		margin-left: 0%;
+	}
+	to{
+		margin-left:100%;
+	}
+	
+	
+}
+
+	
+.header-sm-xs nav img:first-of-type{
+	margin-left: 60px;
+	
+}
+.header-sm-xs nav img:nth-of-type(2){
+	
+	cursor: pointer;
+	float: right;
+	margin-right: 5%;
+	margin-top: 5px;
+	cursor: pointer;
+	
+}
+.header-sm-xs nav li{
+	
+	list-style-type: none;
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+}
+.header-sm-xs nav li a{
+	
+	text-decoration: none;
+	color:white;
+	margin-top: 30px;
+	transition: all 0.5s ease-in-out
+}
+.header-sm-xs nav li a:hover{
+	text-decoration: none;
+	color:hsl(0, 94%, 66%);
+	background-color: #4545e2;
+}
+.header-sm-xs nav li a span{
+	 display:inline-block;
+    border-bottom:2px solid white;
+    padding-bottom:30px;
+	width:90%
+	
+}
+
+
+.header-sm-xs nav li a button{
+	
+	
+	text-transform: uppercase;
+	
+	color:white;
+	width: 90%;
+	height: 60px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: #4545e2;
+	transition: all 0.5s ease-in-out
+}
+
+.header-sm-xs nav li a button:hover{
+	color:  hsl(0, 94%, 66%);
+	background-color: white;
+	border:0.5px solid #4545e2;
+}
+
+
+/* the second */
+/* lg and md for desktop */
+
+.simple-bookmark{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	column-gap: 120px;
+	
+}
+/*
+.simple-bookmark  .bg{
+	height: 120px;
+	width: 300px;
+	position: absolute;
+	right:-10%;
+	bottom: 200px;
+	z-index: 1;
+	background-color: hsl(231, 69%, 60%)
+} */
+
+.simple-bookmark  img{
+	margin-right: 2%;
+	width: 35%;
+	height: 280px;
+	z-index: 1000;
+	box-shadow: 5px 5px 20px black;
+	border:15px solid black;
+	border-radius: 30px;
+}
+/* background of image */
+.simple-bookmark .bg{
+	height: 270px;
+	width: 43%;
+	border-bottom-left-radius: 100px;
+	position: absolute;
+	right:-10%;
+	bottom: 150px;
+	z-index: 1;
+	background-color: hsl(231, 69%, 60%)
+}
+.simple-bookmark article{
+	
+	margin-left: 5%;
+	margin-top: 50px
+}
+.simple-bookmark  h1{
+	font-size: 30px;
+	color:hsl(229, 31%, 21%);
+	font-weight: bold;
+	text-transform: capitalize
+}
+
+
+.simple-bookmark button:first-of-type{
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+	color:white;
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: hsl(231, 69%, 60%);
+	transition: all 0.5s ease-in-out
+}
+.simple-bookmark button:first-of-type:hover{
+	color:hsl(231, 69%, 60%);
+	background-color: white;
+	border:0.5px solid hsl(231, 69%, 60%);
+	
+}
+
+.simple-bookmark button:last-of-type{
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+	color:black;
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: white;
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.simple-bookmark button:last-of-type:hover{
+	border:0.5px solid black;
+}
+
+/* sm and xs for mobile */
+
+
+
+
+
+
+.simple-bookmark-sm-xs  img{
+	margin-top: 100px;
+	margin:50px auto;
+	position: relative;
+	left:10%; 
+	/*width: 400px;*/
+	width: 85%;
+	height: 300px;
+	z-index: 10000;
+	box-shadow: 5px 5px 20px black;
+	border:15px solid black;
+	border-radius: 30px;
+	
+}
+.simple-bookmark-sm-xs .bg-sm-xs{
+	height: 300px;
+	width: 70%;
+	border-bottom-left-radius: 100px;
+	position: absolute;
+	right:-10%;
+	bottom: 200px;
+	z-index: 1;
+	background-color: hsl(231, 69%, 60%)
+}
+.simple-bookmark-sm-xs article{
+	
+	text-align: center;
+	margin-top: 250px
+}
+.simple-bookmark-sm-xs  h1{
+	font-size: 25px;
+	color:black;
+	font-weight: bold;
+	text-transform: capitalize
+}
+
+
+.simple-bookmark-sm-xs button:first-of-type{
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+	color:white;
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: hsl(231, 69%, 60%);
+	transition: all 0.5s ease-in-out
+}
+.simple-bookmark-sm-xs button:first-of-type:hover{
+	color:hsl(231, 69%, 60%);
+	background-color: white;
+	border:0.5px solid hsl(231, 69%, 60%);
+	
+}
+
+.simple-bookmark-sm-xs button:last-of-type{
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+	color:black;
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: white;
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.simple-bookmark-sm-xs button:last-of-type:hover{
+	border:0.5px solid black;
+}
+
+/* the third */
+/* lg and md for desktop */
+
+.features{
+	text-align: center;
+	margin-top: 100px;
+}
+.features nav{
+	margin-left: -20px;
+}
+.features nav li{
+	list-style-type: none;
+	display: inline-block;
+}
+.features nav li a span{
+	color:hsl(229, 8%, 60%);
+	margin-left: 30px;
+	
+	text-decoration: none;
+	transition: all 0.3s ease-in-out
+}
+.features nav li a span:hover{
+	
+	/*color:hsl(0, 94%, 66%);*/
+}
+
+
+.features nav li a .simple-lign {
+color:black;
+	
+	
+	
+}
+.simple-lign , .simple-lign-sm-xs{
+    display:inline-block;
+    border-bottom:4px solid hsl(0, 94%, 66%);
+    padding-bottom:30px;
+	width: 250px
+}
+.speedy-lign , .speedy-lign-sm-xs{
+    display:inline-block;
+   /* border-bottom:4px solid hsl(0, 94%, 66%);*/
+    padding-bottom:30px;
+	width: 250px
+}
+
+.easy-lign , .easy-lign-sm-xs{
+    display:inline-block;
+   /* border-bottom:4px solid hsl(0, 94%, 66%);*/
+    padding-bottom:30px;
+	width: 250px
+}
+a .simple-lign:hover , a .speedy-lign:hover , a .easy-lign:hover , a .simple-lign-sm-xs:hover , a .speedy-lign-sm-xs:hover , a .easy-lign-sm-xs:hover{
+	
+	color:hsl(0, 94%, 66%);
+}
+/*
+.features nav li a:visited span{
+	color:black;
+
+		
+} */
+
+.lign{
+    display:inline-block;
+    border-bottom:2px solid hsl(229, 8%, 60%);
+    padding-bottom:0px;
+	
+	
+}
+/* sm and xs */
+.features-sm-xs{
+	text-align: center;
+	margin-top: 200px;
+}
+.features-sm-xs nav hr{
+	margin-top: -5px;
+	width: 90%;
+	border:0.6px solid hsl(229, 8%, 60%);
+}
+.features-sm-xs nav li{
+	list-style-type: none;
+	
+}
+.features-sm-xs nav li a span{
+	color:hsl(229, 8%, 60%);
+	margin-top: 10px;
+	
+	text-decoration: none;
+	transition: all 0.3s ease-in-out
+}
+
+
+.features-sm-xs nav li a .simple-lign-sm-xs {
+color:black;
+	
+	
+	
+}
+
+
+
+
+
+
+/* lg and md for desktop */
+ /* background2 of image */
+
+.bg2{
+height: 270px;
+	width: 35%;
+	border-bottom-right-radius: 100px;
+	position: absolute;
+	left:0%;
+	margin-top:50px;
+	z-index: 1;
+	background-color: hsl(231, 69%, 60%)
+}
+/* 1- simple bookmarking   2-speedy searcjing   3-easy sharing*/
+.simple-bookmarking , .speedy-searching , .easy-sharing{
+	
+	/*display: flex;
+	
+	justify-content: center;*/
+	column-count: 2;
+	column-gap: 80px;
+	margin-top: 100px;
+	margin-left: 0px;
+	animation: show-div 0.2s ease-in-out 0s 1 normal forwards paused;
+	
+}
+ 
+ 
+@keyframes show-div{
+	
+	
+	0% , 100%{
+		
+	margin-left: 0px;
+	}
+	50%{
+		margin-left: 90%;
+		
+	}
+	
+}
+.simple-bookmarking img , .speedy-searching img , .easy-sharing img , .simple-bookmarking-sm-xs img , .speedy-searching-sm-xs img , .easy-sharing-sm-xs img{
+	position: relative;
+	left:10%;
+	top:-20px;
+	width: 85%;
+	height: 300px;
+	z-index: 100;
+}
+ 
+.simple-bookmarking > div , .speedy-searching > div , .easy-sharing > div{
+	position: relative;
+	top:50px;
+	
+	width: 100%
+}
+ 
+
+.simple-bookmarking button , .speedy-searching button , .easy-sharing button , .simple-bookmarking-sm-xs button , .speedy-searching-sm-xs button , .easy-sharing-sm-xs button{
+	text-align: center;
+	color:white;
+	width: 100px;
+	font-size: 15px;
+	height: 40px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: hsl(231, 69%, 60%);
+	transition: all 0.5s ease-in-out
+}
+.simple-bookmarking button:hover , .speedy-searching button:hover , .easy-sharing button:hover , .simple-bookmarking-sm-xs button:hover , .speedy-searching-sm-xs button:hover , .easy-sharing-sm-xs button:hover{
+	color:hsl(231, 69%, 60%);
+	border:0.5px solid hsl(231, 69%, 60%);
+	background-color: white;
+}
+
+/* sm and xs for mobile */
+
+.bg2-sm-xs{
+height: 300px;
+	width: 60%;
+	border-bottom-right-radius: 100px;
+	position: absolute;
+	margin-top: 40px;
+	left:0%;
+	
+	z-index: 1;
+	background-color: hsl(231, 69%, 60%)
+}
+
+/* 1- simple bookmarking   2-speedy searcjing   3-easy sharing*/
+.simple-bookmarking-sm-xs , .speedy-searching-sm-xs , .easy-sharing-sm-xs{
+	
+	/*display: flex;
+	
+	justify-content: center;*/
+	
+	margin-top: 100px;
+	margin-left: 0px;
+	animation: show-div-sm-xs 0.2s ease-in-out 0s 1 normal forwards paused;
+	
+}
+ 
+ 
+ 
+@keyframes show-div-sm-xs{
+	
+	
+	0% , 100%{
+		
+	margin-top: 100px;
+	}
+	50%{
+		margin-top: 90%;
+		
+	}
+	
+}
+ 
+.simple-bookmarking-sm-xs > div , .speedy-searching-sm-xs > div , .easy-sharing-sm-xs > div{
+	text-align: center;
+	position: relative;
+	top:50px;
+	
+	
+}
+/* the fourth */
+/* lg and md for desktop and sm and xs for mobile*/
+.download{
+	margin-top: 250px;
+	text-align: center;
+}
+.download-extension{
+margin-top: 50px;
+display: flex;
+	justify-content: center;
+	column-gap: 30px;
+}
+.download-extension > div  {
+	margin-top: 60px;
+	text-align: center;
+	background: white;
+	border:0.1px solid hsl(0, 0%, 95%);
+	border-radius: 10px;
+	width: 350px;
+	height: 400px;
+	padding-top: 50px;
+	box-shadow: 0px 3px 0px  hsl(229, 8%, 60%);
+}
+.download-extension-sm-xs > div{
+	
+	margin-top: 60px;
+	margin:50px auto;
+	text-align: center;
+	background: white;
+	border:0.1px solid hsl(0, 0%, 95%);
+	border-radius: 10px;
+	width: 350px;
+	height: 400px;
+	padding-top: 50px;
+	box-shadow: 0px 3px 0px  hsl(229, 8%, 60%);
+}
+/*
+.download-extension div span{
+	
+	 display:inline-block;
+    border-bottom: dotted 5px hsl(229, 8%, 60%);
+    padding-bottom:40px;
+	width: 420px;
+	
+}*/
+
+.download-extension > div hr , .download-extension-sm-xs > div hr{
+width: 300px;
+	
+	border-bottom: 5px dotted hsl(229, 8%, 60%);
+	margin-top: 35px; /* specify a height for this hr */
+overflow:hidden;
+}
+
+
+
+.download-extension > div button , .download-extension-sm-xs > div button{
+	
+	text-align: center;
+	color:white;
+	width: 280px;
+	font-size: 15px;
+	height: 50px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: hsl(231, 69%, 60%);
+	transition: all 0.5s ease-in-out
+}
+.download-extension > div button:hover , .download-extension-sm-xs > div button:hover{
+	
+	color:hsl(231, 69%, 60%);
+	border:0.5px solid hsl(231, 69%, 60%);
+	background-color: white;
+}
+
+.download-extension > div:nth-of-type(2){
+	
+	margin-top: 110px;
+}
+.download-extension > div:last-of-type{
+	
+	margin-top: 160px;
+}
+
+/* the fifth */
+
+
+
+.frequently{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.questions , .questions-xs{
+	margin-top: 50px;
+	text-align: center;
+	display: block;
+	
+	/*text-align: center;
+	display: flex;
+	justify-content: center;*/
+}
+
+.questions > div div , .questions-xs > div div{
+	
+	
+	width: 100%
+}
+.questions > div div a:hover , .questions-xs > div div a:hover{
+	text-decoration: none;
+	
+}
+.questions > div div h3 {
+	font-size: 18px;
+	position: relative;
+	left:-30%;
+	transition: all 0.2s ease-in-out
+}
+.questions > div div a h3:hover , .questions-xs > div div a h3:hover{
+	color:hsl(0, 94%, 66%);
+}/* , .questions-xs > div div:nth-of-type(4) h3*/
+.questions > div div:nth-of-type(2) h3  , .questions-xs > div div:nth-of-type(2) h3  {
+	
+	margin-left: 110px
+}
+.questions > div div:nth-of-type(4) h3 {
+	margin-left: 130px
+}
+.questions > div div  i{
+	display: inline-block;
+	margin-left: 400px;
+	
+	position: relative;
+	top:-28px;
+	transition: all 0.2s ease-in-out;
+	
+}
+#arrow1 , #arrow2 , #arrow3 , #arrow4 , #arrow1-xs , #arrow2-xs , #arrow3-xs , #arrow4-xs {
+	transform: rotateZ(0deg);
+	color:hsl(231, 69%, 60%);
+	animation: not-rotate-arrow 0.2s ease-in-out 0s 1 normal forwards ; 
+}
+
+@keyframes not-rotate-arrow {
+	
+	
+	
+	from{
+		transform: rotate(90deg)
+	}
+	
+	to{
+		transform: rotate(0deg);
+	}
+	
+	
+}
+#arrow-rotate1 , #arrow-rotate2 , #arrow-rotate3 , #arrow-rotate4 , #arrow-rotate1-xs , #arrow-rotate2-xs , #arrow-rotate3-xs , #arrow-rotate4-xs{
+	
+	color:hsl(0, 94%, 66%);
+	animation: rotate-arrow 0.2s ease-in-out 0s 1 normal forwards ; 
+}
+@keyframes rotate-arrow {
+	
+	
+	
+	from{
+		transform: rotate(0deg)
+	}
+	
+	to{
+		transform: rotate(180deg);
+	}
+	
+	
+}
+.questions > div div p , .questions-xs > div div p{
+	
+	color:hsl(229, 8%, 60%);
+	transition: all 0.2s ease-in-out
+}
+
+.questions > div div span{
+	 display:inline-block;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    padding-bottom:0px;
+	width: 600px;
+	
+}/*
+.questions > div div hr{
+	width: 600px;
+	
+	text-align: center;
+	margin-top: -20px;
+	border:1px solid hsl(229, 8%, 60%);
+} */
+.what-bookmarking-show , .how-request-show , .is-app-show , .what-about-show , .what-bookmarking-show-xs , .how-request-show-xs , .is-app-show-xs , .what-about-show-xs{
+	display: none;
+}
+/* xs for mobile */
+.questions-xs > div div h3{
+	font-size: 16px;
+	position: relative;
+	left:-25%;
+	transition: all 0.2s ease-in-out
+}
+.questions-xs > div div:nth-of-type(2) h3{
+	margin-left: 90px;
+}
+
+.questions-xs > div div i{
+	display: inline-block;
+	margin-left: 330px;
+	
+	position: relative;
+	top:-28px;
+	transition: all 0.2s ease-in-out
+}
+.questions-xs > div div span{
+	 display:inline-block;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    padding-bottom:0px;
+	width: 400px;
+	
+}
+.questions button , .questions-xs button{
+	margin-top: 30px;
+	
+	color:white;
+	width: 100px;
+	font-size: 15px;
+	height: 40px;
+	border-radius: 10px;
+	border:0.5px solid white;
+	background-color: hsl(231, 69%, 60%);
+	transition: all 0.5s ease-in-out
+	
+}
+.questions button:hover , .questions-xs button:hover{
+	color:hsl(231, 69%, 60%);
+	border:0.5px solid hsl(231, 69%, 60%);
+	background-color: white;
+}
+/* the sixth */
+
+.stay-up {
+	text-align: center;
+	margin-top: 80px;
+	padding-top: 40px;
+	background-color: hsl(231, 69%, 60%);
+	width: 100%;
+	height: 400px;
+}
+
+.stay-up h1{
+	color:white
+}
+.stay-up h5{
+	color:#e3e3e3;
+	letter-spacing: 5px
+}
+/* lg and md for desktop */
+
+.stay-up div:first-of-type div{
+	display: inline-block
+}
+.stay-up div:first-of-type .check-email , .stay-up div:last-of-type .check-email-sm-xs  {
+	margin-top:   10px;
+	width: 380px;
+	height: 80px;
+	border-radius: 10px;
+	/* for the true email */
+/*	background-color:  hsl(0, 94%, 66%);
+	border:1px solid  hsl(0, 94%, 66%);*/
+	
+	/* for the false email */
+	/*background-color:  green;
+	border:1px solid  green;*/
+}
+.stay-up div:first-of-type .check-email input , .stay-up div:last-of-type .check-email-sm-xs input{
+	
+	width: 380px;
+	padding-left: 20px;
+	height: 50px;
+	border-radius: 10px;
+	border:1px solid hsl(231, 69%, 60%);
+	font-size: 15px;
+	
+}
+.stay-up div:first-of-type .check-email .invalid-email , .stay-up div:last-of-type .check-email-sm-xs .invalid-email-sm-xs{
+	display: none;
+	position: absolute;
+	color:white;
+	font-size: 16px;
+	margin-top: 3px;
+	margin-left: 20px
+
+}
+.stay-up div:first-of-type .check-email #invalid-image , .stay-up div:last-of-type .check-email-sm-xs #invalid-image-sm-xs{
+	display: none;
+	position: absolute;
+	color:red;
+	font-size: 20px;
+	margin-top: -35px;
+	margin-left: 320px
+
+}
+.stay-up div:first-of-type .check-email .valid-email , .stay-up div:last-of-type .check-email-sm-xs .valid-email-sm-xs{
+	display: none;
+	position: absolute;
+	color:white;
+	font-size: 16px;
+	margin-top: 3px;
+	margin-left: 20px
+
+}
+/* buttons */
+.stay-up  div:first-of-type div:last-of-type button{
+	margin-top: 10px;
+	width: 170px;
+	color:white;
+	background-color: hsl(0, 94%, 66%);
+	height: 50px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 15px;
+	transition: all 0.2s ease-in-out;
+	
+}
+
+.stay-up  div:first-of-type div:last-of-type button:hover , .stay-up  div:last-of-type div:last-of-type button:hover{
+	color:hsl(0, 94%, 66%);
+	background-color: white;
+	border:1px solid hsl(0, 94%, 66%);
+}
+
+
+/* sm and xs for mobile */
+
+.stay-up div:last-of-type div:first-of-type{
+	text-align: center
+}
+
+
+
+/* buttons */
+
+
+.stay-up  div:last-of-type div:last-of-type button{
+	margin-left: 0px;
+	width: 380px;
+	color:white;
+	background-color: hsl(0, 94%, 66%);
+	height: 50px;
+	border-radius: 10px;
+	
+	
+	font-size: 15px;
+	transition: all 0.2s ease-in-out;
+	
+}
+
+
+
+/* footer the seventh */
+/* lg and md for desktop */
+.final-bookmark{
+	
+	width: 100%;
+	height: 100px;
+	padding-top: 50px;
+	background-color: hsl(229, 31%, 21%);
+	display: flex;
+	justify-content: space-between;
+}
+
+.final-bookmark nav{
+	
+	display: inline-block;
+	margin-left: 10%
+}
+.final-bookmark nav span{
+	color:white;
+	font-size: 22px;
+	margin-left: -100px;
+	margin-right: 20px;
+	user-select: none;
+}
+.final-bookmark nav a{
+	cursor: pointer;
+	color:#e3e3e3;
+	text-decoration: none;
+	margin-left: 25px;
+	transition: all 0.2s ease-in-out;
+}
+.final-bookmark nav a:hover , .final-bookmark-sm-xs nav a:hover{
+	color:hsl(0, 94%, 66%);	
+	
+}
+.final-bookmark div{
+	display: inline-block;
+	margin-right: 10%
+	
+}
+.final-bookmark div i {
+	font-size: 25px;
+	cursor: pointer;
+	color:white;
+	margin-left: 25px;
+	transition: all 0.2s ease-in-out;
+	
+}
+.final-bookmark div i:hover , .final-bookmark-sm-xs div i:hover{
+	color:hsl(0, 94%, 66%);	
+	
+}
+/* sm and xs for mobile */
+.final-bookmark-sm-xs{
+	
+	width: 100%;
+	height: 350px;
+	padding-top: 50px;
+	background-color: hsl(229, 31%, 21%);
+	text-align: center;
+}
+
+
+.final-bookmark-sm-xs nav{
+	
+	display: block;
+	margin-top: 50px
+	
+}
+.final-bookmark-sm-xs  span{
+	color:white;
+	font-size: 22px;
+	margin-left: -110px;
+	margin-right: 20px;
+	user-select: none;
+}
+.final-bookmark-sm-xs nav a{
+	display: block;
+	cursor: pointer;
+	color:#e3e3e3;
+	text-decoration: none;
+	margin-top: 20px;
+	transition: all 0.2s ease-in-out;
+}
+.final-bookmark-sm-xs div{
+	margin-top: 40px;
+	display: inline-block;
+	
+}
+.final-bookmark-sm-xs div i{
+	font-size: 25px;
+	cursor: pointer;
+	color:white;
+	margin:15px;
+	transition: all 0.2s ease-in-out;
+}
