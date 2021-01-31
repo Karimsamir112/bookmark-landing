@@ -388,10 +388,10 @@ function checkEmailSmXs(){
 	 var textt = document.getElementById("input-email-sm-xs").value;
         
        
-        var battt;
+        var bat;
         
-        battt=/^\s?\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
-        var s = battt.test(textt);
+        bat=/^\s?\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
+        var s = bat.test(textt);
 	
 	
 	
@@ -401,17 +401,12 @@ function checkEmailSmXs(){
 	
 	if(s){
 		
-		
-		
-		
 		document.querySelector(".check-email-sm-xs").style.backgroundColor="green";
 		document.querySelector(".check-email-sm-xs").style.border="1px solid  green";
 		document.querySelector(".valid-email-sm-xs").style.display="block";
 		document.querySelector(".invalid-email-sm-xs").style.display="none";
 		document.getElementById("invalid-image-sm-xs").style.display="none";
-		
-		
-		
+	
 	}
 	
 	
