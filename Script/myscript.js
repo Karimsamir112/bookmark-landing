@@ -335,14 +335,14 @@ var text = document.getElementById("input-email").value;
 	
 	
 	
-	
+	/*
 	var textt = document.getElementById("input-email-sm-xs").value;
         
        
         var battt;
         
         battt = /^\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
-        var s = battt.test(textt);
+        var s = battt.test(textt); */
 
 
 function checkEmail(){
@@ -356,7 +356,7 @@ function checkEmail(){
 	
 
 	
-	if(b || s){
+	if(b){
 		
 		
 		document.querySelector(".check-email").style.backgroundColor="green";
