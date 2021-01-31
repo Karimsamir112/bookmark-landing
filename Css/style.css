@@ -749,6 +749,7 @@ overflow:hidden;
 	
 	margin-left: 110px
 }
+
 .questions > div div:nth-of-type(4) h3 {
 	margin-left: 130px
 }
@@ -830,10 +831,12 @@ overflow:hidden;
 	left:-25%;
 	transition: all 0.2s ease-in-out
 }
-.questions-xs > div div:nth-of-type(2) h3 , .questions-xs > div div:nth-of-type(4) h3{
+.questions-xs > div div:nth-of-type(2) h3 {
 	margin-left: 90px;
 }
-
+.questions-xs > div div:nth-of-type(4) h3{
+	margin-left: 50px;
+}
 .questions-xs > div div i{
 	display: inline-block;
 	margin-left: 330px;
