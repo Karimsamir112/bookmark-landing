@@ -322,15 +322,7 @@ function showdiv(class1 , class2){
 
 
 
-
-
-
-function checkEmail(){
-	
-	
-	
-	
-	 var text = document.getElementById("input-email").value;
+var text = document.getElementById("input-email").value;
         
        
         var batt;
@@ -351,6 +343,14 @@ function checkEmail(){
         
         battt=/^\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
         var s =battt.test(textt);
+
+
+function checkEmail(){
+	
+	
+	
+	
+	 
 	
 	
 	
