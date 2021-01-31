@@ -472,7 +472,7 @@ function checkEmail(){
         var battt;
         
         battt=/^\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
-        var s =batt.test(textt);
+        var s =battt.test(textt);
 	
 	
 	
