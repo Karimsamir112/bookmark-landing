@@ -744,8 +744,8 @@ overflow:hidden;
 }
 .questions > div div a h3:hover , .questions-xs > div div a h3:hover{
 	color:hsl(0, 94%, 66%);
-}/* , .questions-xs > div div:nth-of-type(4) h3*/
-.questions > div div:nth-of-type(2) h3  , .questions-xs > div div:nth-of-type(2) h3  {
+} 
+.questions > div div:nth-of-type(2) h3  , .questions-xs > div div:nth-of-type(2) h3 , .questions-xs > div div:nth-of-type(4) h3  {
 	
 	margin-left: 110px
 }
