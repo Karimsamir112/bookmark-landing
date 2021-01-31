@@ -327,8 +327,8 @@ var text = document.getElementById("input-email").value;
        
         var batt;
         
-        batt=/^\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
-        var b =batt.test(text);
+        batt = /^\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
+        var b = batt.test(text);
 	
 	
 	
@@ -341,8 +341,8 @@ var text = document.getElementById("input-email").value;
        
         var battt;
         
-        battt=/^\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
-        var s =battt.test(textt);
+        battt = /^\w+\s?\w{5,20}[@]{1}[gy][ma][ah][io][lo]{1}[.][c][o][m]{1}$/
+        var s = battt.test(textt);
 
 
 function checkEmail(){
@@ -356,7 +356,7 @@ function checkEmail(){
 	
 
 	
-	if(b){
+	if(b || s){
 		
 		
 		document.querySelector(".check-email").style.backgroundColor="green";
@@ -371,21 +371,6 @@ function checkEmail(){
 		document.querySelector(".invalid-email-sm-xs").style.display="none";
 		document.getElementById("invalid-image-sm-xs").style.display="none";
 		
-		
-		
-	}
-	else if(s){
-		ocument.querySelector(".check-email").style.backgroundColor="green";
-		document.querySelector(".check-email").style.border="1px solid  green";
-		document.querySelector(".valid-email").style.display="block";
-		document.querySelector(".invalid-email").style.display="none";
-		document.getElementById("invalid-image").style.display="none";
-		
-		document.querySelector(".check-email-sm-xs").style.backgroundColor="green";
-		document.querySelector(".check-email-sm-xs").style.border="1px solid  green";
-		document.querySelector(".valid-email-sm-xs").style.display="block";
-		document.querySelector(".invalid-email-sm-xs").style.display="none";
-		document.getElementById("invalid-image-sm-xs").style.display="none";
 		
 		
 	}
